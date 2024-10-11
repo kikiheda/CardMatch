@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "url": "/assets/image1.png",
+        "alt": "pumpkin"
+    },
+    {
+        "id": 2,
+        "url": "/assets/image2.png",
+        "alt": "croissant"
+    },
+    {
+        "id": 3,
+        "url": "/assets/image3.png",
+        "alt": "pizza"
+    },
+    {
+        "id": 4,
+        "url": "/assets/image4.png",
+        "alt": "ice cream"
+    },
+    {
+        "id": 5,
+        "url": "/assets/image5.png",
+        "alt": "cupcake"
+    },
+    {
+        "id": 6,
+        "url": "/assets/image6.png",
+        "alt": "taco"
+    },
+    {
+        "id": 7,
+        "url": "/assets/image7.png",
+        "alt": "ramen"
+    },
+    {
+        "id": 8,
+        "url": "/assets/image8.png",
+        "alt": "fries"
+    },
+    {
+        "id": 9,
+        "url": "/assets/image1.png",
+        "alt": "pumpkin"
+    },
+    {
+        "id": 10,
+        "url": "/assets/image2.png",
+        "alt": "croissant"
+    },
+    {
+        "id": 11,
+        "url": "/assets/image3.png",
+        "alt": "pizza"
+    },
+    {
+        "id": 12,
+        "url": "/assets/image4.png",
+        "alt": "ice cream"
+    },
+    {
+        "id": 13,
+        "url": "/assets/image5.png",
+        "alt": "cupcake"
+    },
+    {
+        "id": 14,
+        "url": "/assets/image6.png",
+        "alt": "taco"
+    },
+    {
+        "id": 15,
+        "url": "/assets/image7.png",
+        "alt": "ramen"
+    },
+    {
+        "id": 16,
+        "url": "/assets/image8.png",
+        "alt": "fries"
+    }
+]

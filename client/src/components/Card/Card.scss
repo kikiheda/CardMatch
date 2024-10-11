@@ -1,0 +1,89 @@
+// Variables
+$primary-color: #4682B4; // Blue color theme
+$font-family: 'Avenir', sans-serif;
+
+// Mixins
+@mixin card-size($size) {
+  width: $size;
+  height: $size;
+}
+
+// Card Styles
+.card {
+  @include card-size(100px);
+  perspective: 1000px;
+  cursor: pointer;
+  margin: 5px;
+  position: relative;
+  visibility: visible; // Ensure cards are always visible in the grid
+
+  &.hidden {
+    visibility: hidden; // Hide cards visually but keep their space in the grid
+  }
+
+  &-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  &.flipped .card-inner {
+    transform: rotateY(180deg);
+  }
+
+  &-front,
+  &-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 8px;
+  }
+
+  &-front {
+    background-color: $primary-color;
+    color: white;
+    font-size: 2em;
+  }
+
+  &-back {
+    transform: rotateY(180deg);
+
+    img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 8px;
+    }
+  }
+
+  &.matched .card-front {
+    background-color: lighten($primary-color, 20%);
+    cursor: default;
+  }
+}
+
+// Responsive Styles
+@media (max-width: 1200px) {
+  .card {
+    @include card-size(80px);
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    @include card-size(60px);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    @include card-size(50px);
+  }
+}

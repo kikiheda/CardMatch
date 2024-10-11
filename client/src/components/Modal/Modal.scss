@@ -1,0 +1,94 @@
+// Variables
+$primary-color: #4682B4; // Blue color theme
+$font-family: 'Avenir', sans-serif;
+
+// Modal Styles
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+
+  h2 {
+    color: $primary-color;
+    margin-bottom: 10px;
+    font-family: $font-family;
+  }
+
+  p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-family: $font-family;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $font-family;
+
+    input[type="text"] {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid lighten($primary-color, 20%);
+      border-radius: 4px;
+      width: 100%;
+    }
+
+    button[type="submit"] {
+      padding: 10px 20px;
+      background-color: $primary-color;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+
+      &:disabled {
+        background-color: lighten($primary-color, 20%);
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+
+    &:disabled {
+      background-color: lighten($primary-color, 20%);
+      cursor: not-allowed;
+    }
+  }
+}
