@@ -34,9 +34,9 @@ For the purpose of this hackathon, **CardMatch** is built as a single-player exp
      npm install
      npm start
      ```
-  - for live:
-    ```bash
-    npm run dev
+    - for live:
+      ```bash
+      npm run dev
 
 ## Technology Stack
 
